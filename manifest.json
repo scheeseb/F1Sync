@@ -1,0 +1,30 @@
+{
+ 
+    "manifest_version": 3,
+    "name": "F1Sync",
+    "description": "Syncronizes multiple instances of the F1TV video play to the same time stamp. Allowing for picture in picture capabilities at the press of a button!",
+    "version": "1.0.1",
+    "permissions": [
+      "tabs",
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "scripts/background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://f1tv.formula1.com/*"],
+        "js": ["scripts/script.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "images/car1.png"
+      }
+    },
+    "icons": {
+      "16": "images/car1.png"
+    }
+  }
+  

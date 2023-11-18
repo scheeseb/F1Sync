@@ -1,0 +1,25 @@
+body {background-color: black;}
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+    width: 150px;
+}
+
+div {
+    margin-bottom: 50px;
+    padding: 32px;
+
+    border-style: solid;
+    border-color: blue;
+
+    color: white;
+    font-size: 26px;
+}
+
+Button {
+    margin-bottom: 20px;
+}
