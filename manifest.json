@@ -14,7 +14,9 @@
     "content_scripts": [
       {
         "matches": ["https://f1tv.formula1.com/*"],
-        "js": ["scripts/script.js"]
+        "js": ["scripts/script.js"],
+        "run_at": "document_idle",
+        "world": "MAIN"
       }
     ],
     "action": {
